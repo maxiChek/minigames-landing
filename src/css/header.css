@@ -14,6 +14,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  width: 100%;
 }
 
 .logo {
@@ -28,23 +32,42 @@
 .nav__list {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav__link {
   font-weight: 500;
-  transition: color 0.2s ease;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .nav__link:hover,
 .nav__link--active {
-  color: var(--color-accent-purple);
+  color: var(--color-text-main);
+}
+
+/* Active state for current page link */
+.nav__link--active,
+.mobile-menu__link--active {
+  color: var(--color-accent-primary, #6c5ce7);
+  font-weight: 600;
+  cursor: default; /* Changes cursor so user sees it is current page */
+  pointer-events: none;
+}
+
+.header__nav {
+  margin-left: auto;
+  margin-right: 2.5rem;
 }
 
 .header__actions {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 1rem;
 }
 
 /* Buttons UI */
