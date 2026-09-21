@@ -6,6 +6,8 @@ import { fileURLToPath } from 'url';
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 
 export default defineConfig({
+  // Base public path for GitHub Pages deployment
+  base: '/minigames-landing/',
   build: {
     rollupOptions: {
       input: {
