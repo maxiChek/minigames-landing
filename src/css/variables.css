@@ -1,0 +1,53 @@
+:root {
+  /* ==========================================
+     Color Tokens (Цветовая палитра)
+     ========================================== */
+  /* Основные фоновые цвета */
+  --color-bg-main: #18162e;
+  --color-bg-card: #ffffff;
+  --color-bg-surface: #f7f6f0;
+  --color-bg-secondary: #221f43;
+
+  /* Акцентные цвета */
+  --color-primary: #fcd329; /* Жёлтая кнопка CTA */
+  --color-primary-hover: #e0b81f; /* Состояние hover для жёлтой кнопки */
+  --color-accent-blue: #4d49d6; /* Фиолетово-синие элементы / Шапка таблицы */
+  --color-accent-purple: #6a66ed;
+
+  /* Текст */
+  --color-text-dark: #121212;
+  --color-text-muted: #666666;
+  --color-text-light: #ffffff;
+  --color-text-yellow: #fcd329;
+
+  /* Границы и тени */
+  --color-border: #121212;
+  --shadow-main: 4px 4px 0px #121212; /* Фирменная жесткая тень компонентов */
+
+  /* Status / Tags */
+  --color-tag-free: #10b981;
+
+  /* ==========================================
+     Font Tokens (Типографика)
+     ========================================== */
+  --font-family-main: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Sizes */
+  --font-size-h1: 56px;
+  --font-size-h2: 36px;
+  --font-size-h3: 24px;
+  --font-size-body: 16px;
+  --font-size-small: 14px;
+
+  /* Line heights */
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+
+  /* ==========================================
+     Layout & Spacing Tokens
+     ========================================== */
+  --container-width: 1280px;
+  --border-radius-main: 16px;
+  --border-radius-btn: 12px;
+  --border-radius-pill: 100px;
+}
