@@ -1,0 +1,70 @@
+/* Hero section container with full background image */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+  /* Set full-width room illustration background */
+  background-image: url('../assets/hero-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.hero__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+/* White content card with rounded corners */
+.hero__card {
+  background-color: var(--color-card-bg, #ffffff);
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  max-width: 440px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--color-text-main, #18162e);
+  margin-bottom: 1.25rem;
+}
+
+.hero__description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text-muted, #595667);
+  margin-bottom: 2rem;
+}
+
+.hero__btn {
+  display: inline-block;
+  padding: 0.85rem 1.75rem;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* Responsive styles for tablets and mobile */
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  .hero__card {
+    max-width: 100%;
+    padding: 2rem 1.5rem;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+}

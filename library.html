@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="./src/css/global.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <!-- Logo -->
+        <a href="./index.html" class="header__logo logo">
+          <img
+            src="./src/assets/logo.svg"
+            alt="MiniGames Logo"
+            class="logo__img"
+          />
+          <span class="logo__text">MiniGames</span>
+        </a>
+
+        <!-- Desktop nav -->
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="./library.html" class="nav__link nav__link--active"
+                >Library</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#tournaments" class="nav__link">Tournaments</a>
+            </li>
+            <li class="nav__item">
+              <a href="#community" class="nav__link">Community</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Auth and Burger -->
+        <div class="header__actions">
+          <a href="#login" class="btn btn--outline">Log In</a>
+          <a href="#signup" class="btn btn--primary">Sign Up</a>
+
+          <!-- Mobile button -->
+          <button
+            class="burger-btn"
+            id="burgerBtn"
+            aria-label="Open Navigation Menu"
+          >
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+            <span class="burger-btn__line"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu (Overlay) -->
+      <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu__header">
+          <a href="./index.html" class="logo">
+            <img
+              src="./src/assets/logo.svg"
+              alt="MiniGames Logo"
+              class="logo__img"
+            />
+            <span class="logo__text">MiniGames</span>
+          </a>
+          <button
+            class="mobile-menu__close"
+            id="closeMenuBtn"
+            aria-label="Close Navigation Menu"
+          >
+            &times;
+          </button>
+        </div>
+
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li>
+              <a href="./index.html" class="mobile-menu__link">Home</a>
+            </li>
+            <li>
+              <a
+                href="./library.html"
+                class="mobile-menu__link mobile-menu__link--active"
+                >Library</a
+              >
+            </li>
+            <li>
+              <a href="#tournaments" class="mobile-menu__link">Tournaments</a>
+            </li>
+            <li>
+              <a href="#community" class="mobile-menu__link">Community</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu__actions">
+          <a href="#login" class="btn btn--outline btn--full">Log In</a>
+          <a href="#signup" class="btn btn--primary btn--full">Sign Up</a>
+        </div>
+      </div>
+    </header>
+
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
+</html>

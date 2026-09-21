@@ -1,0 +1,26 @@
+{
+  "name": "minigames-landing",
+  "version": "1.0.0",
+  "description": "full UI using only JS + HTML + CSS, without frameworks or ready-made UI libraries",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxiChek/minigames-landing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxiChek/minigames-landing/issues"
+  },
+  "homepage": "https://github.com/maxiChek/minigames-landing#readme",
+  "devDependencies": {
+    "vite": "^8.3.0"
+  }
+}
