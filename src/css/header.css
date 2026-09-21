@@ -55,7 +55,7 @@
 .mobile-menu__link--active {
   color: var(--color-accent-primary, #6c5ce7);
   font-weight: 600;
-  cursor: default; /* Changes cursor so user sees it is current page */
+  cursor: default;
   pointer-events: none;
 }
 
