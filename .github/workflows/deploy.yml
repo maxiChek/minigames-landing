@@ -1,0 +1,49 @@
+name: Deploy to GitHub Pages
+
+# Trigger deployment on push to landing-page branch
+on:
+  push:
+    branches: [landing-page]
+
+# Permissions required for deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one deployment at a time
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Download code from repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      # Step 2: Setup Node.js environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+      # Step 3: Install project dependencies
+      - name: Install dependencies
+        run: npm ci
+      # Step 4: Build production bundle using Vite
+      - name: Build project
+        run: npm run build
+      # Step 5: Configure GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      # Step 6: Upload build output folder (dist)
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+      # Step 7: Deploy build artifact to Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

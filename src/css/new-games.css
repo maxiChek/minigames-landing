@@ -1,0 +1,155 @@
+/* Main section layout */
+.new-games {
+  width: 100%;
+  padding-block: 3rem;
+  background-color: var(--bg, #121026);
+  color: #fff;
+  overflow: hidden;
+}
+
+.new-games__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-inline: 2rem;
+}
+
+/* Header and navigation controls */
+.new-games__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.new-games__title {
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.new-games__title::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 24px;
+  background-color: #ffb800;
+  border-radius: 2px;
+}
+
+.new-games__controls {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.slider-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffffff;
+  color: #121026;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
+}
+
+.slider-btn--next {
+  background-color: #ffb800;
+}
+
+.slider-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Slider Track and Container */
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider__track {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* Base Card Styling */
+.game-card {
+  flex: 0 0 280px;
+  height: 360px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #28244d;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    flex 0.3s ease;
+}
+
+/* Active Highlighted Center Card */
+.game-card--active {
+  flex: 0 0 440px;
+  height: 400px;
+  border-color: #5c52ab;
+}
+
+.game-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.game-card__info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.25rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+}
+
+.game-card__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.game-card__meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: #d1d0d9;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .game-card {
+    flex: 0 0 200px;
+    height: 280px;
+  }
+
+  .game-card--active {
+    flex: 0 0 320px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 380px) {
+  .game-card {
+    flex: 0 0 80px;
+    height: 220px;
+  }
+
+  .game-card--active {
+    flex: 0 0 240px;
+    height: 250px;
+  }
+}

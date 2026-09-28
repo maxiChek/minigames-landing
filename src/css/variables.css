@@ -1,0 +1,78 @@
+:root {
+  --white: #fff;
+  --bg: #f9f8f3;
+  --bg-footer: #1e1b3a;
+  --bg-footer-low: #2a264f;
+  --on-bg-footer: #b9b5c9;
+  --black: #111;
+  --primary: #ffd02b;
+  --on-primary: #242145;
+  --avatar-random-1: #e9eef6;
+  --avatar-random-2: #a3e2c9;
+  --avatar-random-3: #bce3ff;
+  --avatar-random-4: #ffc6ff;
+  --avatar-random-5: #e8dff5;
+  --secondary: #f0eeff;
+  --like: #ff4b4b;
+  --tertiary: #3a2ebf;
+  --on-bg: #5f5d75;
+  --outline: #e5e7eb;
+  --on-bg-low: #737380;
+  --price-free: #0b8a8f;
+  --outline-variant: #d2d2d2;
+  --text-placeholder: #969696;
+  --primary-low: #fde047;
+  --primary-high: #e5bb00;
+  --error: #b3261e;
+  --surface: #fff9e5;
+  --bg-footer-lowest: #3c376e;
+  --surface-low: #fffcf5;
+  /* Основные фоновые цвета */
+  --color-bg-main: #18162e;
+  --color-bg-card: #ffffff;
+  --color-bg-surface: #f7f6f0;
+  --color-bg-secondary: #221f43;
+
+  /* Акцентные цвета */
+  --color-primary: #fcd329; /* Жёлтая кнопка CTA */
+  --color-primary-hover: #e0b81f; /* Состояние hover для жёлтой кнопки */
+  --color-accent-blue: #4d49d6; /* Фиолетово-синие элементы / Шапка таблицы */
+  --color-accent-purple: #6a66ed;
+
+  /* Текст */
+  --color-text-dark: #121212;
+  --color-text-muted: #666666;
+  --color-text-light: #ffffff;
+  --color-text-yellow: #fcd329;
+
+  /* Границы и тени */
+  --color-border: #121212;
+  --shadow-main: 4px 4px 0px #121212; /* Фирменная жесткая тень компонентов */
+
+  /* Status / Tags */
+  --color-tag-free: #10b981;
+
+  /* ==========================================
+     Font Tokens (Типографика)
+     ========================================== */
+  --font-family-main: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Sizes */
+  --font-size-h1: 56px;
+  --font-size-h2: 36px;
+  --font-size-h3: 24px;
+  --font-size-body: 16px;
+  --font-size-small: 14px;
+
+  /* Line heights */
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+
+  /* ==========================================
+     Layout & Spacing Tokens
+     ========================================== */
+  --container-width: 1440px;
+  --border-radius-main: 16px;
+  --border-radius-btn: 12px;
+  --border-radius-pill: 100px;
+}
