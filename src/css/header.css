@@ -1,22 +1,25 @@
-/* ==========================================
-   Header Component
-   ========================================== */
 .header {
-  background-color: var(--color-bg-surface);
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--bg, #f9f8f3);
+  /* border-bottom: 1px solid var(--outline, #e5e7eb); */
+  /* background-color: var(--color-bg-surface); */
   border-bottom: 2px solid var(--color-border);
   padding: 16px 0;
   position: sticky;
   top: 0;
-  z-index: 100;
+  /* z-index: 100; */
 }
 
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 1rem 2rem;
+  padding: 1rem 120px;
+  box-sizing: border-box;
   width: 100%;
 }
 
